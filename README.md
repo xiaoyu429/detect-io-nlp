@@ -2,8 +2,8 @@
 
 This project addresses the growing challenge of identifying coordinated information operations (IO) on social media platforms, particularly Twitter. By combining linguistic features from tweets with behavioral patterns of users, we build predictive models to detect potential manipulation in online discourse.
 
--	面向社交平台中疑似协同操控账号的检测任务，解决“短文本 + 异质用户行为”双模态数据下的标签稀缺与特征碎片化问题
--	实现文本清洗、关键词掩码、子词编码等完整预处理流程，解决社交媒体口语化噪声与拼写变异问题，提升模型泛化能力
+-	面向社交平台中疑似协同操控账号的检测任务，解决“短文本 + 异质用户行为”双模态数据下的标签稀缺与特征碎片化问题 （见models）
+-	实现文本清洗、关键词掩码、子词编码等完整预处理流程，解决社交媒体口语化噪声与拼写变异问题，提升模型泛化能力（见utils-preprocess.py)
 
 ## Data Sources
 
@@ -12,7 +12,7 @@ This project addresses the growing challenge of identifying coordinated informat
 
 ## Models
 -	使用 PyTorch 与 Hugging face Transformers 构建多模型架构：包括文本微调（M1）、MLP 分类器（M2）、行为特征随机森林（M3）及融合模型（M4），提升跨模态信号识别能力
-We evaluated four models:
+We evaluated four models (见notebooks）：
 
 | Model | Description |
 |-------|-------------|
